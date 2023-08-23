@@ -80,6 +80,14 @@ function Form() {
       severity,
     });
   };
+
+  const showAlertSucc = (message, severity = "success") => {
+    setAlertState({
+      open: true,
+      message,
+      severity,
+    });
+  };
   const handleFormChange = (e) => {
     console.log(e.target.value);
     setFormInputData({ ...formInputData, [e.target.name]: e.target.value });
@@ -94,7 +102,7 @@ function Form() {
       !formInputData.travlers ||
       !formInputData.class
     ) {
-      return showAlert("Please Fill Form");
+      return showAlert("Please Fill Complete Form");
     }
     const departDate = new Date(formInputData.depart);
     const returnDate = new Date(formInputData.return);
@@ -116,25 +124,19 @@ function Form() {
     setTimeout(() => {
       setisbtnClick(true);
       setFormInputDataSend(formInputData);
-    }, 3000); // Delay in milliseconds (3 seconds in this case)
 
-    // LiveChatWidget.call("set_session_variables", {
-    //   username: "john.doe",
-    //   cart_value: "450",
-    //   "order date": "05/21/2019",
-    // });
-    // LiveChatWidget.function("method", "data");
+      setTimeout(() => {
+        showAlertSucc("Thanks! Your Cheap Flight Form Send to Farina Agent.");
+      }, 3000);
+    }, 3000);
   };
   return (
     <>
-      {/* {isbtnClick formInputData && <ResultComponent formData={formInputData} />} */}
-
       {isbtnClick === true ? (
         <ResultComponent formData={formInputDatatoSend} />
       ) : (
         <span>load</span>
       )}
-      {/* <LiveChatWidget license="15965643" /> */}
       <ToastNotify alertState={alertState} setAlertState={setAlertState} />
       <Box py={4} sx={{ backgroundColor: "#CBE8FF" }}>
         <Container>

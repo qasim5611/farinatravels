@@ -16,7 +16,7 @@ const ResultComponent = (props) => {
         class: props.formData.class,
       });
     }
-  }, []);
+  }, [props?.formData]);
 
   return <div id="chatbot-widget-container"></div>;
 };
