@@ -5,14 +5,11 @@ const ResultComponent = (props) => {
   useEffect(() => {
     if (props?.formData) {
       LiveChatWidget.call("update_session_variables", {
-        checkIn: props.formData.checkIn,
-        checkOut: props.formData.checkOut,
-        class: props.formData.class,
+        Departure: props.formData.checkIn,
+        Destination: props.formData.checkOut,
         depart: props.formData.depart,
         return: props.formData.return,
         travlers: props.formData.travlers,
-        tripDetail: props.formData.tripDetail,
-        checkOut: props.formData.checkOut,
         class: props.formData.class,
       });
     }

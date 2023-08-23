@@ -64,7 +64,7 @@ function Form() {
   const [isbtnClick, setisbtnClick] = useState(false);
 
   const [formInputData, setFormInputData] = useState({
-    tripDetail: "",
+    // tripDetail: "",
     checkIn: "",
     checkOut: "",
     depart: "",
@@ -95,7 +95,6 @@ function Form() {
   const handleSubmit = async (event) => {
     event.preventDefault();
     if (
-      !formInputData.tripDetail ||
       !formInputData.checkIn ||
       !formInputData.depart ||
       !formInputData.return ||
@@ -111,7 +110,6 @@ function Form() {
     formInputData.depart = departUnixTimestamp;
     formInputData.return = returnUnixTimestamp;
     setFormInputData({
-      tripDetail: "",
       checkIn: "",
       checkOut: "",
       depart: "",
@@ -167,7 +165,7 @@ function Form() {
               justifyContent="center"
               onSubmit={handleSubmit}
             >
-              <Grid item xs={12}>
+              {/* <Grid item xs={12}>
                 <Box mb={2}>
                   <RadioGroup
                     row
@@ -212,12 +210,12 @@ function Form() {
                     />
                   </RadioGroup>
                 </Box>
-              </Grid>
+              </Grid> */}
               <Grid item xs={12} sm={matches2 ? 12 : 6} md={5}>
                 <Box my={2}>
                   {" "}
                   <FormLabel htmlFor="checkIn" sx={labelStyle}>
-                    Check In
+                    Departure
                   </FormLabel>
                   <TextField
                     id="checkIn"
@@ -236,7 +234,7 @@ function Form() {
                   <Box my={2}>
                     {" "}
                     <FormLabel htmlFor="checkOut" sx={labelStyle}>
-                      Check Out
+                      Destination
                     </FormLabel>
                     <TextField
                       id="checkOut"
@@ -365,7 +363,7 @@ function Form() {
                   <Box my={2}>
                     {" "}
                     <FormLabel htmlFor="checkOut" sx={labelStyle}>
-                      Check Out
+                      Destination
                     </FormLabel>
                     <TextField
                       id="checkOut"
