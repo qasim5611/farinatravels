@@ -14,7 +14,7 @@ export default function Home() {
       <MainHeader />
       <NavHeroSection />
       <About />
-      <Form />
+      {/* <Form /> */}
       <Services />
       <RecommendedAirlines />
       <FeaturedSlider />
