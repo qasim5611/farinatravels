@@ -1290,38 +1290,49 @@
     "@livechat/url-utils" "^0.2.0"
 
 "@livechat/customer-sdk@^3.1.3":
-  version "3.1.3"
-  resolved "https://registry.npmjs.org/@livechat/customer-sdk/-/customer-sdk-3.1.3.tgz"
-  integrity sha512-BAghpxDuHhss7LXFUVr5zWlecuSm074EpT11oIJ2Hh0yJUshOA8Gc8B8adhi+suVbnT3sKKzXqIZIXeKf6S3uw==
+  version "3.1.5"
+  resolved "https://registry.npmjs.org/@livechat/customer-sdk/-/customer-sdk-3.1.5.tgz"
+  integrity sha512-d0O04vbkG4CIcZNVCWttx+RsyFiLeL1S8p9tcOi+xN7Ar2l9wJgtx/Ti6G8Hy5kDjWZonL+gxN+XTFVkxGF66A==
   dependencies:
     "@livechat/backoff" "^0.1.0"
     "@livechat/customer-auth" "^0.4.0-alpha.7"
-    "@livechat/data-utils" "^1.0.3"
+    "@livechat/data-utils" "^0.2.16"
+    "@livechat/deferred" "^1.1.0"
     "@livechat/file-upload" "^0.3.0"
     "@livechat/isomorphic-storage" "^0.1.0"
-    "@livechat/mitt" "^0.1.3"
+    "@livechat/mitt" "^0.1.2"
     "@livechat/platform-client" "^0.3.1"
-    "@livechat/promise-utils" "^1.0.1"
+    "@livechat/promise-try" "^0.1.0"
     "@livechat/side-effects-middleware" "^0.2.0"
-    "@livechat/url-utils" "^0.2.1"
+    "@livechat/url-utils" "^0.2.0"
     redux "^4.0.4"
     ts-toolbelt "^6.7.5"
     unfetch "^4.2.0"
 
-"@livechat/data-utils@^0.2.16":
+"@livechat/data-utils@^0.2.16", "@livechat/data-utils@^0.2.5":
   version "0.2.17"
   resolved "https://registry.npmjs.org/@livechat/data-utils/-/data-utils-0.2.17.tgz"
   integrity sha512-QbjW6D8AMm2VDGZJiYs5Cz3dMWOES8rQLLob6MLYwnZvBFqi6186sx2Ca+4o4DnRXCFiYZYJIYhwcgFcwbi+Kw==
 
-"@livechat/data-utils@^0.2.5":
-  version "0.2.17"
-  resolved "https://registry.npmjs.org/@livechat/data-utils/-/data-utils-0.2.17.tgz"
-  integrity sha512-QbjW6D8AMm2VDGZJiYs5Cz3dMWOES8rQLLob6MLYwnZvBFqi6186sx2Ca+4o4DnRXCFiYZYJIYhwcgFcwbi+Kw==
-
-"@livechat/data-utils@^1.0.1", "@livechat/data-utils@^1.0.2", "@livechat/data-utils@^1.0.3":
+"@livechat/data-utils@^1.0.1":
   version "1.0.3"
   resolved "https://registry.npmjs.org/@livechat/data-utils/-/data-utils-1.0.3.tgz"
   integrity sha512-Ao0b6UMxJ1CmqRhFjMsd2n6gM4fmfbwe2gZTbTLdvU2u5OQHj008T20mjQ+NOPwbcT+8dMj8wF5TrftMu4oA1w==
+
+"@livechat/data-utils@^1.0.2":
+  version "1.0.3"
+  resolved "https://registry.npmjs.org/@livechat/data-utils/-/data-utils-1.0.3.tgz"
+  integrity sha512-Ao0b6UMxJ1CmqRhFjMsd2n6gM4fmfbwe2gZTbTLdvU2u5OQHj008T20mjQ+NOPwbcT+8dMj8wF5TrftMu4oA1w==
+
+"@livechat/data-utils@^1.0.3":
+  version "1.0.3"
+  resolved "https://registry.npmjs.org/@livechat/data-utils/-/data-utils-1.0.3.tgz"
+  integrity sha512-Ao0b6UMxJ1CmqRhFjMsd2n6gM4fmfbwe2gZTbTLdvU2u5OQHj008T20mjQ+NOPwbcT+8dMj8wF5TrftMu4oA1w==
+
+"@livechat/deferred@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.npmjs.org/@livechat/deferred/-/deferred-1.1.0.tgz"
+  integrity sha512-5B2n5EBHljL1xwflgQDRBTYcrqX5S23SmQXhpu6ZeYhgNTzB7AKyN+7Jv77nQAfWAZxS7QDmasc/wA1uxAwZ2Q==
 
 "@livechat/dom-utils@^0.2.5", "@livechat/dom-utils@^0.2.6":
   version "0.2.6"
@@ -1405,6 +1416,11 @@
     callbag-timeout "^1.0.1"
     callbag-to-promise "^1.0.1"
 
+"@livechat/promise-try@^0.1.0":
+  version "0.1.0"
+  resolved "https://registry.npmjs.org/@livechat/promise-try/-/promise-try-0.1.0.tgz"
+  integrity sha512-dqOKtFemgv8xGFHlCc6W4lfPXCzmzmgdNGhwAadftdCQCWLoLqwZVAyh5AvGuZ9pSFzg7H+/lOhNlt25+u2FVA==
+
 "@livechat/promise-utils@^1.0.1":
   version "1.0.1"
   resolved "https://registry.npmjs.org/@livechat/promise-utils/-/promise-utils-1.0.1.tgz"
@@ -1417,7 +1433,7 @@
   resolved "https://registry.npmjs.org/@livechat/side-effects-middleware/-/side-effects-middleware-0.2.0.tgz"
   integrity sha512-WqoEJd7AkvN0ofRrdzclgvEbZciOnJK5Tz8vTmRVbOE8ti1aUDTfRxGiKg1MBOKid+6VFE95QJIlNOA2jCC6SQ==
 
-"@livechat/url-utils@^0.2.0", "@livechat/url-utils@^0.2.1":
+"@livechat/url-utils@^0.2.0":
   version "0.2.1"
   resolved "https://registry.npmjs.org/@livechat/url-utils/-/url-utils-0.2.1.tgz"
   integrity sha512-vWotJfqyPxVXXboaJr+L2hlYxzO0JVnhYgrFicV5TONFyUGbZVAg2oibfmi6hD9dvobh/FFitzYtPY88pIakmg==

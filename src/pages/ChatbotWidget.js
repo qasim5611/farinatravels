@@ -4,7 +4,7 @@ const ChatbotWidget = () => {
   useEffect(() => {
     // Your chatbot widget JavaScript code initialization here
     window.__lc = window.__lc || {};
-    window.__lc.license = 16006779;
+    window.__lc.license = 16223445;
     (function (n, t, c) {
       function i(n) {
         return e._h ? e._h.apply(null, n) : e._q.push(n);
